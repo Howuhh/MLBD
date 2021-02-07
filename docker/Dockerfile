@@ -19,7 +19,7 @@ RUN pip3.5 install -U jupyter nano
 RUN pip3.5 install -U py4j
 
 COPY requirements.txt ./
-RUN pip3.5 install -r requirements.txt 
+RUN pip3.5 install --no-cache-dir -r requirements.txt 
 
 RUN  ln -s /etc/hive/conf/hive-site.xml /etc/spark/conf
 
