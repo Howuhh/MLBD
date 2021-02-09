@@ -1,7 +1,7 @@
 docker run \
 	--hostname=quickstart.cloudera \
 	--privileged=true \
-	-t -i \
+	-t -i --rm \
 	--publish-all=true \
 	-p 8888:8888 \
 	-p 9999:9999 \
